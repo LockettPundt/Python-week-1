@@ -12,3 +12,5 @@ for x in user_word:
 print(alphabet)
 for item in alphabet:
     print(item + " : " + "*" * alphabet[item])
+
+print(max(alphabet, key=alphabet.get) + " is your most used letter.")
