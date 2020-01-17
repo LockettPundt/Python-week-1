@@ -13,7 +13,7 @@ while len(message) > i:
         new_message += " "
     else:
         index = plain_split.index(message[i])
-        new_message += plain_split[index - rot_num]
+        new_message += plain_split[(index - rot_num) % 26]
     i += 1
 
 print(new_message)
