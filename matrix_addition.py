@@ -2,7 +2,7 @@
 matrix_1 = [[1, 2], [11, 6]]
 matrix_2 = [[4, 6], [25,5]]
 
-def matrix_adder(x, y):  
+def matrix_adder(x, y):
     if (len(x) == len(y)):
         sum_matrix = [[],[]]
         i = 0
@@ -14,5 +14,5 @@ def matrix_adder(x, y):
             i += 1
             j = 0
     return sum_matrix
-
+    
 print(matrix_adder(matrix_1, matrix_2))
