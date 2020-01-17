@@ -12,3 +12,6 @@ for x in user_word_array:
 print(alphabet)
 for item in alphabet:
     print(item + " : " + "*" * alphabet[item])
+
+
+print(max(alphabet, key=alphabet.get) + " is your most used word.")
