@@ -103,6 +103,9 @@ tables = {
         }
     }
 }
+tables["Table 2"]["For the Table."] = {
+    "Chef Special" : menu["Specials"]["Chef Special"]
+}
 
 def print_reciept(table):
     total_sans_tax = 0
