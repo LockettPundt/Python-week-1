@@ -115,7 +115,7 @@ def print_reciept(table):
     for guest in table:
         print("\n** {} **\n".format(guest))
         for item in table[guest]:
-            print("{}{}".format(item, (30 - len(item)) * " ") + "$" + str(table[guest][item]))
+            print("{}{}".format(item, (30 - len(item)) * " ") + "$" + str(format(table[guest][item], '.2f')))
             total_sans_tax += table[guest][item]
     total_with_tax = ((total_sans_tax * .08) + total_sans_tax )
     print("\n")
